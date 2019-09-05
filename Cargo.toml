@@ -9,7 +9,6 @@ documentation = "https://docs.rs/imperfect/"
 homepage = "https://github.com/superwhiskers/imperfect"
 repository = "https://github.com/superwhiskers/imperfect"
 
-license-file = "license.lesser"
 build = "build.rs"
 autobins = false
 edition = "2018"
