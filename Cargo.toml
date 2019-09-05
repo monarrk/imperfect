@@ -1,9 +1,41 @@
 [package]
 name = "imperfect"
-version = "0.1.0"
+description = "one package manager to rule them all, for real this time"
 authors = ["superwhiskers <whiskerdev@protonmail.com>"]
+license = "LGPL-3.0"
+version = "0.0.1"
+
+documentation = "https://docs.rs/imperfect/"
+homepage = "https://github.com/superwhiskers/imperfect"
+repository = "https://github.com/superwhiskers/imperfect"
+
+license-file = "license.lesser"
+build = "build.rs"
+autobins = false
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "imperfect"
+path = "src/lib.rs"
+bench = true
+test = true
+doctest = true
+doc = true
+
+[[bin]]
+name = "i" 
+path = "src/command/main.rs"
+
+[[bin]]
+name = "imperfectd"
+path = "src/daemon/main.rs"
+
+[[bin]]
+name = "init"
+path = "src/init/main.rs"
+
+[[bin]]
+name = "imperfectk"
+path = "src/kernel/main.rs"
 
 [dependencies]
