@@ -1,6 +1,6 @@
 use std::env;
 
-const HELP_STR: &str = "IMPERFECT...\n\nSyntax: i [command] [arg]\n\nCommands:\n  install\tinstall a package\n  remove\tremove a package\n  find\t\tsearch for a package\n  upgrade\tupgrade a package";
+const HELP_STR: &str = "IMPERFECT...\n\nSyntax: i [command] [arg]\n\nCommands:\n  install\tinstall a package\n  remove\tremove a package\n  search\tsearch for a package\n  update\tupgrade a package\n  repo\t\t[sync|add|remove] syncs, adds, or removes a package repository\n  sync\t\tsyncs all repos and updates all packages";
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -15,8 +15,10 @@ fn main() {
     match cmd {
         "install" => return,
         "remove" => return,
-        "find" => return,
-        "upgrade" => return,
+        "search" => return,
+        "update" => return,
+        "repo" => return,
+        "sync" => return,
         _ => {
             println!("Command {} does not exist...", cmd);
             std::process::exit(1);
