@@ -23,9 +23,8 @@ nothing here yet :)
 
 ## installation
 
-:))))
+Running `cargo build` will build binaries in the `target` directory. You should find binaries for `i`, `init`, `imperfectd`, and `imperfectk`.
 
 ## usage
 
-owo
-
+Come back once it does things :)
