@@ -38,3 +38,5 @@ name = "imperfectk"
 path = "src/kernel/main.rs"
 
 [dependencies]
+hyper = "0.13.0-alpha.4"
+tokio = "0.2.0-alpha.6"
